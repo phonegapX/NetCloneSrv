@@ -1,0 +1,11 @@
+Convbmp.exe用法:
+Convbmp.exe <bmp文件名.bmp>
+
+Showbmp.exe用法:(用于预览启动画面效果)
+Showbmp.exe <bmp文件名.bmp>
+
+OemLogo.exe用法:(最后生成OemLogo.bin启动画面文件)
+OemLogo.exe <bmp文件名.bmp> <OemLogo.bin>
+
+图片要求:
+256色,640x480解析度,BMP格式

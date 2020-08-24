@@ -1,0 +1,225 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\KdNetCloneSrv.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\KdNetCloneSrv.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_KDNETCLONESRV_DIALOG DIALOGEX 0, 0, 224, 276
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "奇东锐腾PXE全自动网克工具(v1.0)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_PARTLIST,21,198,167,65,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "对全盘进行克隆",IDC_RADIO_DISK,"Button",
+                    BS_AUTORADIOBUTTON,21,82,82,14
+    CONTROL         "对分区进行克隆",IDC_RADIO_PART,"Button",
+                    BS_AUTORADIOBUTTON,21,108,82,14
+    GROUPBOX        "模式选择",IDC_STATIC,7,66,210,163
+    GROUPBOX        "选择GHO镜像文件",IDC_STATIC,7,11,210,47
+    EDITTEXT        IDC_EDIT_PATH,21,31,165,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "…",IDC_BUTTON_BROWSE,192,31,16,11
+    PUSHBUTTON      "开始网络克隆",IDC_BUTTON_START,40,244,58,16
+    LTEXT           "源分区选择:",IDC_STATIC,21,134,95,8
+    COMBOBOX        IDC_COMBO_GHOPARTLIST,21,154,167,65,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "工作站目标分区选择:",IDC_STATIC,21,178,95,8
+    PUSHBUTTON      "退出",IDC_BUTTON_EXIT,124,244,58,16
+END
+
+IDD_DIALOG_SERVER DIALOG DISCARDABLE  0, 0, 303, 197
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "奇东锐腾PXE全自动网克工具(v1.0)"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_DIALOG_NETCARDLIST DIALOG DISCARDABLE  0, 0, 142, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "奇东锐腾PXE全自动网克工具(v1.0)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_NETCARDLIST,20,22,102,65,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "请选择使用哪块网卡进行网克",IDC_STATIC,8,8,128,37
+    GROUPBOX        "网卡信息",IDC_STATIC,8,51,128,71
+    LTEXT           "设备描述  :",IDC_STATIC_DEVICEDESC,15,64,111,8
+    LTEXT           "IP获取方式:",IDC_STATIC_DHCPTYPE,15,78,111,8
+    LTEXT           "子网掩码  :",IDC_STATIC_NETMASK,15,106,111,8
+    LTEXT           "IP地址    :",IDC_STATIC_IPADDRESS,15,92,111,8
+    PUSHBUTTON      "确定",IDC_BUTTON_OK,33,127,74,11
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "author:zhang mo xuan\0"
+            VALUE "CompanyName", "深圳奇东锐腾\0"
+            VALUE "FileDescription", "奇东锐腾PXE全自动网克工具(v1.0)\0"
+            VALUE "FileVersion", "V1.0\0"
+            VALUE "InternalName", "KdNetCloneSrv\0"
+            VALUE "LegalCopyright", "奇东锐腾 版权所有 (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "KdNetCloneSrv.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "奇东锐腾PXE全自动网克工具\0"
+            VALUE "ProductVersion", "V1.0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PXE
+//
+
+IDR_PXE_C               PXE     DISCARDABLE     "res\\ClientData\\netghost-c.pxe"
+IDR_PXE_D               PXE     DISCARDABLE     "res\\ClientData\\netghost-d.pxe"
+IDR_PXE_E               PXE     DISCARDABLE     "res\\ClientData\\netghost-e.pxe"
+IDR_PXE_F               PXE     DISCARDABLE     "res\\ClientData\\netghost-f.pxe"
+IDR_PXE_HD              PXE     DISCARDABLE     "res\\ClientData\\netghost-hd.pxe"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// IMG
+//
+
+IDR_IMG_C               IMG     DISCARDABLE     "res\\ClientData\\netghos-c.img"
+IDR_IMG_D               IMG     DISCARDABLE     "res\\ClientData\\netghos-d.img"
+IDR_IMG_E               IMG     DISCARDABLE     "res\\ClientData\\netghos-e.img"
+IDR_IMG_F               IMG     DISCARDABLE     "res\\ClientData\\netghos-f.img"
+IDR_IMG_HD              IMG     DISCARDABLE     "res\\ClientData\\netghos-hd.img"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// SRV
+//
+
+IDR_SRV                 SRV     DISCARDABLE     "res\\ServerData\\GhostSrv.exe"
+IDR_SRV_DLL             SRV     DISCARDABLE     "res\\ServerData\\ProtectHook.dll"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\KdNetCloneSrv.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
